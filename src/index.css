@@ -3,10 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: "Hind Siliguri", sans-serif;
 }
 
-.primaryColor{
+.primaryColor {
     color: #f7961d;
+}
+
+.primaryBgColor {
+    background-color: #f7961d;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
