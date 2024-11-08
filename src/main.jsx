@@ -9,6 +9,8 @@ import MainLayout from './Layout/MainLayout';
 import Home from './Pages/Home';
 import Transaction from './Pages/Transaction';
 import TransactionHistory from './Pages/TransactionHistory';
+import MFS from './Pages/MFS';
+import Transfer from './Pages/Transfer';
 
 
 const router = createBrowserRouter([
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path : "/transactionHistory",
         element : <TransactionHistory></TransactionHistory>
+      },
+      {
+        path : "/mfs",
+        element : <MFS></MFS>
+      },
+      {
+        path :"/transfer",
+        element : <Transfer></Transfer>
       }
     ]
   },
