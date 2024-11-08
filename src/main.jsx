@@ -15,6 +15,8 @@ import MFSToMFSPayment from './Pages/MFSToMFSPayment';
 import Bank from './Pages/Bank';
 import Card from './Pages/Card';
 import Profile from './Pages/Profile';
+import About from './Pages/About';
+import PocketToBank from './Pages/PocketToBank';
 
 
 const router = createBrowserRouter([
@@ -57,6 +59,14 @@ const router = createBrowserRouter([
       {
         path : "/profile",
         element : <Profile></Profile>
+      },
+      {
+        path : "/about",
+        element : <About></About>
+      },
+      {
+        path : "/pocketToBank",
+        element : <PocketToBank></PocketToBank>
       }
     ]
   },
