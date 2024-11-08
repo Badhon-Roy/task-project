@@ -13,6 +13,8 @@ import MFS from './Pages/MFS';
 import Transfer from './Pages/Transfer';
 import MFSToMFSPayment from './Pages/MFSToMFSPayment';
 import Bank from './Pages/Bank';
+import Card from './Pages/Card';
+import Profile from './Pages/Profile';
 
 
 const router = createBrowserRouter([
@@ -47,6 +49,14 @@ const router = createBrowserRouter([
       {
         path : "/bank",
         element : <Bank></Bank>
+      },
+      {
+        path : "/card",
+        element : <Card></Card>
+      },
+      {
+        path : "/profile",
+        element : <Profile></Profile>
       }
     ]
   },

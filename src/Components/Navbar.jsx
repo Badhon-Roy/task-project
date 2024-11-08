@@ -19,11 +19,11 @@ const Navbar = () => {
                 <span className="flex flex-col items-center justify-center">   <FaBuildingColumns className="text-[18px]"/> Bank</span>
             </NavLink>
             <NavLink
-                to={'/'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
+                to={'/card'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
                 <span className="flex flex-col items-center justify-center"> <FaRegCreditCard className="text-[18px]"/> Card</span>
             </NavLink>
             <NavLink
-                to={'/'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
+                to={'/profile'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
                 <span className="flex flex-col items-center justify-center"><FaUserLarge className="text-[18px]" /> Profile</span>
             </NavLink>
         </div>
