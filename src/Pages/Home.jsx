@@ -1,22 +1,17 @@
-import { FaAddressCard, FaBell, FaBookReader, FaCalculator, FaCashRegister, FaEnvelopeOpenText, FaImages, FaMobileAlt, FaMoneyBill, FaPercentage, FaRegCreditCard } from "react-icons/fa";
-import { FaBuildingColumns, FaHouse, FaMoneyCheckDollar } from "react-icons/fa6";
+import { FaAddressCard, FaBookReader, FaCalculator, FaCashRegister, FaImages, FaMobileAlt, FaMoneyBill, FaPercentage, FaRegCreditCard } from "react-icons/fa";
+import { FaBuildingColumns, FaMoneyCheckDollar } from "react-icons/fa6";
+import SubNavbar from "../Components/SubNavbar";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+    const navigate = useNavigate();
+    const handleTransaction = ()=>{
+        navigate('/transaction')
+    }
     return (
         <div>
-            <div className="flex gap-4 primaryBgColor px-[15px] py-[10px] rounded-t-[14px] items-center">
-                <span><FaHouse className="text-xl text-white" /></span>
-                <img className="w-[180px] mx-6" src="https://happybanking.org/frontend/images/Untitled-4.png" alt="logo" />
-                <div className="relative">
-                    <span className="absolute font-bold text-white -right-[7px] -top-1 text-[11px]">0</span>
-                    <FaEnvelopeOpenText className="text-xl text-white" />
-                </div>
-                <div className="relative">
-                    <span className="absolute font-bold text-white left-0 -top-1 text-[11px] bg-[#6495ed] px-[5px]">0</span>
-                    <FaBell className="text-[24px] text-white" />
-                </div>
-            </div>
+            <SubNavbar></SubNavbar>
             <div className="mx-3 ">
                 <div className="flex justify-between gap-3 p-2 mt-4 bg-white border rounded-md shadow-md">
                     <div className="flex-1 pr-3 border-r border-[#212529] space-y-2">
@@ -26,15 +21,15 @@ const Home = () => {
                             <span>Current Balance</span>
                         </div>
                         <h2 className="text-2xl text-[#198754] text-center">2900Tk</h2>
-                        <button className="w-full text-white rounded primaryBgColor p-[7px] font-semibold">Transaction</button>
+                        <button onClick={handleTransaction} className="primaryBtn">Transaction</button>
                     </div>
                     <div className="flex-1 space-y-2">
                         <h2 className="text-[#6c757d] text-2xl font-medium text-center">Transfer To</h2>
-                        <button className="w-full text-white rounded primaryBgColor p-[7px] font-semibold">MFS</button>
+                        <button className="primaryBtn">MFS</button>
                         <hr className=" border-[#6f6f6fde]" />
-                        <button className="w-full text-white rounded primaryBgColor p-[7px] font-semibold">Account</button>
+                        <button className="primaryBtn">Account</button>
                         <hr className=" border-[#6f6f6fde]" />
-                        <button className="w-full text-white rounded primaryBgColor p-[7px] font-semibold">Card</button>
+                        <button className="primaryBtn">Card</button>
                     </div>
                 </div>
 

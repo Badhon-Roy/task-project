@@ -7,6 +7,16 @@ body {
     font-family: "Hind Siliguri", sans-serif;
 }
 
+.primaryBtn{
+  
+    width: 100%;
+    color : white ;
+    border-radius: 4px;
+    background-color: #f7961d;
+    padding: 7px;
+    font-weight: 800;
+}
+
 .primaryColor {
     color: #f7961d;
 }
