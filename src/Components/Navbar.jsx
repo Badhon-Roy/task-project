@@ -15,7 +15,7 @@ const Navbar = () => {
                 <span className="flex flex-col items-center justify-center"><FaMobileAlt className="text-[18px]" /> MFS</span>
             </NavLink>
             <NavLink
-                to={'/'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
+                to={'/bank'} className={({ isActive, isPending }) => isActive ? "primaryColor text-[14px]" : isPending ? "pending" : "text-[14px]"}>
                 <span className="flex flex-col items-center justify-center">   <FaBuildingColumns className="text-[18px]"/> Bank</span>
             </NavLink>
             <NavLink

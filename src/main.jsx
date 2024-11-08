@@ -12,6 +12,7 @@ import TransactionHistory from './Pages/TransactionHistory';
 import MFS from './Pages/MFS';
 import Transfer from './Pages/Transfer';
 import MFSToMFSPayment from './Pages/MFSToMFSPayment';
+import Bank from './Pages/Bank';
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path : "/mfsToMfsPayment",
         element : <MFSToMFSPayment></MFSToMFSPayment>
+      },
+      {
+        path : "/bank",
+        element : <Bank></Bank>
       }
     ]
   },
